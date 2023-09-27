@@ -1,0 +1,93 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+.sub-icon > svg {
+  width:10px;
+  height:10px;
+}
+.border-l-4 {
+  border-left: 4px solid #e89188 !important;
+  border-radius: 0 !important;
+}
+.mui-style-cveggr-MuiListItemIcon-root {
+    min-width: 35px !important; 
+
+}
+.mui-style-cveggr-MuiListItemIcon-root:last-child {   
+    justify-content: end;
+}
+
+.mui-style-o4b71y-MuiAccordionSummary-content.Mui-expanded, .mui-style-1iji0d4 {
+    margin: 0;    
+    width: 100%;
+    display: inline-block;
+    background: #f5f5f5;
+    justify-content: space-between;
+    align-items: center;    
+    border-radius: 0 !important;    
+}
+.mui-style-o4b71y-MuiAccordionSummary-content.Mui-expanded:hover, .accordion-div-main > div:hover {
+  border-left: 0px solid #e89188 !important;
+} 
+.mui-style-o4b71y-MuiAccordionSummary-content, .mui-style-17o5nyn, .accordion-div-main > div {
+  margin: 0 !important;    
+  width: 100%;
+  display: inline-block !important;
+}
+
+.mui-style-1dgfu6o-MuiButtonBase-root-MuiListItem-root:hover, .mui-style-q801yl:hover, .accordion-div-item:hover {
+  border-left: 4px solid #e89188 !important;
+  background: #f5f5f5 !important;     
+  border-radius: 0 !important;  
+}
+
+.mui-style-xmzdpb-MuiPaper-root-MuiAccordion-root.Mui-expanded, .mui-style-xmzdpb-MuiPaper-root-MuiAccordion-root, .mui-style-11f2y1l {
+  box-shadow:none !important;  
+}
+.mui-style-xmzdpb-MuiPaper-root-MuiAccordion-root:before, .mui-style-11f2y1l::before {
+  opacity: 0 !important; 
+}
+.mui-style-1dgfu6o-MuiButtonBase-root-MuiListItem-root, .mui-style-q801yl, .accordion-div-item {
+  padding: 10px 5px !important;
+}
+.mui-style-xmzdpb-MuiPaper-root-MuiAccordion-root:first-of-type, .mui-style-11f2y1l:first-of-type {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+.mui-style-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  margin-bottom: 10px;
+}
+.mui-style-1dgfu6o-MuiButtonBase-root-MuiListItem-root.Mui-selected {
+  background-color: inherit !important;
+}
+
+.custom-text-area {  
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.23);
+}
+
+.custom-text-area:hover {
+  border-color: #000;
+}
+
+.custom-text-area:focus, .custom-text-area:focus-visible {
+  border-radius: 3px;
+  border: 1px solid #556cd6;  
+  outline-style: solid;
+  outline-color: #556cd6;
+}
