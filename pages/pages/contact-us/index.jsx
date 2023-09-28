@@ -92,7 +92,7 @@ export default function ContactUs() {
               <TableRow>
                 <TableCell>
                   <Typography variant="subtitle2" fontWeight={600}>
-                    S.N0
+                    S.No
                   </Typography>
                 </TableCell>
                 <TableCell>
@@ -166,10 +166,10 @@ export default function ContactUs() {
                     <TableCell>
                       <div className="flex justify-between items-center">
                         <Tooltip title="View" arrow>
-                          <IconEye className="mx-auto text-gray-500 cursor-pointer" />
+                          <IconEye className="mx-auto text-primary-blue cursor-pointer" />
                         </Tooltip>
                         <Tooltip title="Delete" arrow>
-                          <IconTrashX className="mx-auto text-gray-500 cursor-pointer" />
+                          <IconTrashX className="mx-auto text-error-main cursor-pointer" />
                         </Tooltip>
                       </div>
                     </TableCell>

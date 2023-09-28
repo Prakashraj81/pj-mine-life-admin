@@ -7,16 +7,18 @@ const baselightTheme = createTheme({
       main: "#5D87FF",
       light: "#ECF2FF",
       dark: "#4570EA",
+      contrastText: "#ffffff",
     },
     secondary: {
       main: "#49BEFF",
       light: "#E8F7FF",
       dark: "#23afdb",
+      contrastText: "#ffffff",
     },
     success: {
-      main: "#13DEB9",
-      light: "#E6FFFA",
-      dark: "#02b3a9",
+      main: "#3BB900",
+      light: "#ECFBE6",
+      dark: "#3BB900",
       contrastText: "#ffffff",
     },
     info: {
@@ -26,15 +28,15 @@ const baselightTheme = createTheme({
       contrastText: "#ffffff",
     },
     error: {
-      main: "#FA896B",
-      light: "#FDEDE8",
-      dark: "#f3704d",
+      main: "#F4002C",
+      light: "#FFE8EC",
+      dark: "#F4002C",
       contrastText: "#ffffff",
     },
     warning: {
-      main: "#FFAE1F",
-      light: "#FEF5E5",
-      dark: "#ae8e59",
+      main: "#F49200",
+      light: "#FFF6E8",
+      dark: "#F49200",
       contrastText: "#ffffff",
     },
     grey: {

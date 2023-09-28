@@ -1,4 +1,5 @@
 import React from "react";
+import theme from "../../../components/theme";
 import FullLayout from "../../../components/layouts/full/FullLayout";
 import {
     Typography,
@@ -135,7 +136,7 @@ export default function Users() {
                                 >
                                     Name : Prakashraj
                                 </Typography>
-                                
+
                             </div>
                             <div className="w-full inline-block mb-7">
                                 <Typography
@@ -146,7 +147,7 @@ export default function Users() {
                                     mb="5px"
                                 >
                                     DOB: 06-05-1998
-                                </Typography>                                
+                                </Typography>
                             </div>
                             <div className="w-full inline-block mb-7">
                                 <Typography
@@ -157,7 +158,7 @@ export default function Users() {
                                     mb="5px"
                                 >
                                     Email: prakash.raj@g-japan.com
-                                </Typography>                                
+                                </Typography>
                             </div>
                             <div className="w-full inline-block mb-7">
                                 <Typography
@@ -168,11 +169,11 @@ export default function Users() {
                                     mb="5px"
                                 >
                                     Address: Global japan network, chennai-600034
-                                </Typography>                                
+                                </Typography>
                             </div>
                         </Grid>
                     </Box>
-                </DialogContent>                
+                </DialogContent>
             </BootstrapDialog>
 
 
@@ -181,14 +182,14 @@ export default function Users() {
                     <Table
                         aria-label="simple table"
                         sx={{
-                            whiteSpace: "nowrap",                           
+                            whiteSpace: "nowrap",
                         }}
                     >
                         <TableHead>
                             <TableRow>
                                 <TableCell>
                                     <Typography variant="subtitle2" fontWeight={600}>
-                                        S.N0
+                                        S.No
                                     </Typography>
                                 </TableCell>
                                 <TableCell>
@@ -253,7 +254,10 @@ export default function Users() {
                                                 <>
                                                     <Chip
                                                         className="text-xs"
-                                                        color="success"
+                                                        style={{
+                                                            backgroundColor: theme.palette.success.light,
+                                                            color: theme.palette.success.main,
+                                                        }}
                                                         size="small"
                                                         label={product.status}
                                                     ></Chip>
@@ -265,7 +269,10 @@ export default function Users() {
                                                         <Chip
                                                             className="text-xs"
                                                             size="small"
-                                                            color="error"
+                                                            style={{
+                                                                backgroundColor: theme.palette.error.light,
+                                                                color: theme.palette.error.main,
+                                                            }}
                                                             label={product.status}
                                                         ></Chip>
                                                     </>
@@ -274,7 +281,7 @@ export default function Users() {
                                         </TableCell>
                                         <TableCell>
                                             <Tooltip title="View" arrow sx={{ textAlign: "center" }}>
-                                                <IconEye id={btoa(product.id)} onClick={viewUser} className="mx-auto text-gray-500 cursor-pointer" />
+                                                <IconEye id={btoa(product.id)} onClick={viewUser} className="mx-auto text-primary-blue cursor-pointer" />
                                             </Tooltip>
                                         </TableCell>
                                     </TableRow>

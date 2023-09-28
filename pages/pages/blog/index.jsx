@@ -59,7 +59,7 @@ export default function Blog() {
               <TableRow>
                 <TableCell>
                   <Typography variant="subtitle2" fontWeight={600}>
-                    S.N0
+                    S.No
                   </Typography>
                 </TableCell>
                 <TableCell>
@@ -113,7 +113,10 @@ export default function Blog() {
                         <>
                           <Chip
                             className="text-xs"
-                            color="success"
+                            style={{
+                              backgroundColor: theme.palette.success.light,
+                              color: theme.palette.success.main,
+                            }}
                             size="small"
                             label={product.status}
                           ></Chip>
@@ -125,7 +128,10 @@ export default function Blog() {
                             <Chip
                               className="text-xs"
                               size="small"
-                              color="error"                              
+                              style={{
+                                backgroundColor: theme.palette.error.light,
+                                color: theme.palette.error.main,
+                              }}
                               label={product.status}
                             ></Chip>
                           </>
@@ -135,13 +141,13 @@ export default function Blog() {
                     <TableCell>
                       <div className="flex justify-between items-center">
                         <Tooltip title="View" arrow>
-                          <IconEdit className="mx-auto text-gray-500 cursor-pointer" />
+                          <IconEdit className="mx-auto text-primary-main cursor-pointer" />
                         </Tooltip>
                         <Tooltip title="Delete" arrow>
-                          <IconTrashX className="mx-auto text-gray-500 cursor-pointer" />
+                          <IconTrashX className="mx-auto text-error-main cursor-pointer" />
                         </Tooltip>
                       </div>
-                    </TableCell>                    
+                    </TableCell>
                   </TableRow>
                 ))}
             </TableBody>

@@ -120,21 +120,30 @@ export default function CustomerTickets() {
                                             {product.status === "Pending" ? (
                                                 <Chip
                                                     className="text-xs"
-                                                    color="success"
+                                                    style={{
+                                                        backgroundColor: theme.palette.success.light,
+                                                        color: theme.palette.success.main,
+                                                    }}
                                                     size="small"
                                                     label={product.status}
                                                 />
                                             ) : product.status === "Approved" ? (
                                                 <Chip
                                                     className="text-xs"
-                                                    color="error"
+                                                    style={{
+                                                        backgroundColor: theme.palette.warning.light,
+                                                        color: theme.palette.warning.main,
+                                                    }}
                                                     size="small"
                                                     label={product.status}
                                                 />
                                             ) : product.status === "Completed" ? (
                                                 <Chip
                                                     className="text-xs"
-                                                    color="primary"
+                                                    style={{
+                                                        backgroundColor: theme.palette.primary.light,
+                                                        color: theme.palette.primary.main,
+                                                    }}
                                                     size="small"
                                                     label={product.status}
                                                 />
@@ -149,7 +158,7 @@ export default function CustomerTickets() {
                                         </TableCell>
                                         <TableCell>
                                             <Tooltip title="View" arrow>
-                                                <IconEyeEdit id={btoa(product.id)} className="mx-auto text-gray-500 cursor-pointer" />
+                                                <IconEyeEdit id={btoa(product.id)} className="mx-auto text-primary-main cursor-pointer" />
                                             </Tooltip>
                                         </TableCell>
                                     </TableRow>

@@ -166,7 +166,7 @@ export default function FAQ() {
           </Box>
         </DialogContent>
         <DialogActions>
-          <button className="px-2 py-1 bg-red-500 text-white hover:bg-white border hover:border-red-500 hover:text-red-500 rounded-sm transition duration-300 delay-150" onClick={CloseModalFunction}>
+          <button className="px-2 py-1 bg-error-main text-white hover:bg-white border hover:border-error-main hover:text-error-main rounded-sm transition duration-300 delay-150" onClick={CloseModalFunction}>
             Cancel
           </button>
           <button className="px-2 py-1 bg-primary-main text-white hover:bg-white border hover:border-primary-main hover:text-primary-main rounded-sm transition duration-300 delay-150">
@@ -242,7 +242,10 @@ export default function FAQ() {
                         <>
                           <Chip
                             className="text-xs"
-                            color="success"
+                            style={{
+                              backgroundColor: theme.palette.success.light,
+                              color: theme.palette.success.main,
+                            }}
                             size="small"
                             label={product.status}
                           ></Chip>
@@ -254,7 +257,10 @@ export default function FAQ() {
                             <Chip
                               className="text-xs"
                               size="small"
-                              color="error"
+                              style={{
+                                backgroundColor: theme.palette.error.light,
+                                color: theme.palette.error.main,
+                              }}
                               label={product.status}
                             ></Chip>
                           </>
@@ -264,10 +270,10 @@ export default function FAQ() {
                     <TableCell>
                       <div className="flex justify-between items-center">
                         <Tooltip title="View" arrow>
-                          <IconEdit onClick={editFAQ} id={btoa(product.id)} className="mx-auto text-gray-500 cursor-pointer" />
+                          <IconEdit onClick={editFAQ} id={btoa(product.id)} className="mx-auto text-primary-blue cursor-pointer" />
                         </Tooltip>
                         <Tooltip title="Delete" arrow>
-                          <IconTrashX onClick={deleteFAQ} id={btoa(product.id)} className="mx-auto text-gray-500 cursor-pointer" />
+                          <IconTrashX onClick={deleteFAQ} id={btoa(product.id)} className="mx-auto text-error-main cursor-pointer" />
                         </Tooltip>
                       </div>
                     </TableCell>
